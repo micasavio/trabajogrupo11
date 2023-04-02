@@ -1,11 +1,95 @@
-body{ 
-    background-image: url(/images/Torta\ fondo.jpg);background-repeat: no-repeat;background-position-x: center;background-position-x: center;background-size: cover;
-   text-align: justify;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    border-image: fill; 
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Roboto:ital,wght@0,300;0,400;1,700&display=swap');
+
+
+*{
+    margin: 0; /*le quieto los margenes por defecto */
+    padding:0;
 }
-   button{
+
+header{
+    width: 100%; /*al 100 para que me ocupe el total de la pantalla*/
+    overflow: hidden;/*le agrego unos float para que mi menu se desplace y el overflow impide que haya errores*/
+    background:#EE82EE;
+    margin-bottom: 20px;
+}
+
+.wrapper { /*esta clase nos centra  el contenido y lo utilizamos en html en todo lo que queramos centrar */
+    width: 90%; /* ancho de toda la pagina*/
+    max-width: 1200px;/*con este elemento logre darle un marco y espacio al encabezado ,separando los items del logo */
+    margin: auto; /*con este margin lo centramos */
+    overflow: hidden;
+}
+ .logo{
+    color: rgb(219, 127, 255);
+    font-size: 50px;
+    line-height: 100px;/*es la altura que abarca nuestro encabezado*/
+    float: left; /*el float lef me lo manda a la izquierda del menu pero gracias a los overflow se ve correctamente por eso son necesarios*/
+}
+
+header nav{
+    float: right; /*aca con el float lo desplazamos a la derecha */
+    line-height: 100px;/*con esto le damos un espaciado  y se va a centrar verticalmente*/
+
+}
+ header nav a{
+    display:inline-block;/*para que cada elemento del menu este al lado del otro y poder modificar el modelo de caja , es decir el alto ,ancho y margenes */
+    color:#66023C;
+    text-decoration: none;
+    padding:10px 20px; /*el padding me dara espacio hacia arriba y hacia abajo y hacia los costados */
+    line-height: nomal;
+    font-size: 20px; /*´para darle dimensión a la letra*/
+    font-weight:bolder;/*con este elemento le doy peso o grueso a la letra*/
+    -webkit-transition: all 500ms ease; /*la transicion sera a todas las propiedades para darle efecto al menu */
+    -moz-transition: all 500ms ease;
+    transition: all 500ms ease;
+    border-radius: 10px;
+
+ }
+
+header nav a:hover{  /*aqui defino el color de transicion entre elementos del menu*/
+    background-color:#E6E6FA ;/*defino los colores con una paleta de colores*/
+    border-radius: 10px;
+ }
+.subtitulo{
+    text-align: left;
+}
+
+h1{
+    color: #66023C;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2{
+ color: #66023C;
+ font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+
+h3{
+    font-size: 40px; /*´para darle dimensión a la letra para el REGISTRO*/
+    font-weight:bolder;
+    color:#1FA3D4;
+    font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+}
+h4{
+    color: #66023C;
+}
+   button{     /*boton con alerta , no tocarlo */
     font-size: x-large;
     color: blue;
     cursor: pointer;
    } 
 
+   body{ 
+    background-image: url(/images/Torta\ fondo.jpg); /*imagen de fondo de pantalla */
+    background-size: cover; /*<<<para que nos cubra toda la página*/
+    background-repeat: no-repeat;
+    background-attachment:fixed ; /*<<<para que la imagen vaya hasta abajo*/
+    background-position: center;
+    
+}
