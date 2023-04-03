@@ -8,11 +8,48 @@
     padding:0;
 }
 
+
 header{
-    width: 100%; /*al 100 para que me ocupe el total de la pantalla*/
-    overflow: hidden;/*le agrego unos float para que mi menu se desplace y el overflow impide que haya errores*/
-    background:#EE82EE;
-    margin-bottom: 20px;
+    width: 100%;/*ancho*/
+    background: violet;
+    height: 90px;/*altura*/
+    
+
+}
+.cuadro{
+    width: 80%;/*con estas medidas trabajo lo que es la caja del logo y el nav,pero voy a necesitar un margen */
+    height: 70px;
+    margin:auto;/*con esto lo centro*/
+}
+.logo{
+    width: 30%;
+    height: 70px;
+    float:left;/*con esto le pido que se acomode dentro de los parametros posible ,que se fuera a la izquierda lo mas posible dentro de ese ancho establecido*/
+}
+
+
+nav{
+    width: 70%;/*aca es de 70 porque sumado al 30 me da el 100 del ancho que puse antes */
+    float:left;/*lo mismo que el logo, que se acomode*/
+    text-align: right;/*para que nuestro texto se vaya a la derecha*/
+    padding-top: 24px; /*para que las letras bajen. Todo lo que queramos que baje sera en el nav*/
+    box-sizing: border-box; /*debo ponerlo porque paddin me desbordo y el box-sizing lo evita , lo contiene*/
+}
+nav ul li{
+   display: inline ;/*con esto hago que mi menu se de ordene en fila hacia la derecha*/
+}
+nav ul li a{
+    color:#66023C;/*aqui voy modificando la letra de nuestro "li" y esto esta en nav ul li a */
+    font-size: 13px;/*tamaño de letra*/
+    text-decoration: none;/*para que no tome ninguna decoracion */
+    text-transform: uppercase;/*nos cambia la letra a mayusculas*/
+    padding-left: 20px;/*esto es para que me separe el listado del menu y lo pondre  la izquierda*/
+    font-weight:bold ;/*letra en negrita*/
+    letter-spacing: 2px;/*con esto genero un espacio entre las letras de una misma palabra*/
+    
+}
+nav ul li a:hover{/*cuando pasamos el mouse el color va a cambiar sobre la palabra*/
+color:blue;
 }
 
 .wrapper { /*esta clase nos centra  el contenido y lo utilizamos en html en todo lo que queramos centrar */
@@ -21,37 +58,9 @@ header{
     margin: auto; /*con este margin lo centramos */
     overflow: hidden;
 }
- .logo{
-    color: rgb(219, 127, 255);
-    font-size: 50px;
-    line-height: 100px;/*es la altura que abarca nuestro encabezado*/
-    float: left; /*el float lef me lo manda a la izquierda del menu pero gracias a los overflow se ve correctamente por eso son necesarios*/
-}
 
-header nav{
-    float: right; /*aca con el float lo desplazamos a la derecha */
-    line-height: 100px;/*con esto le damos un espaciado  y se va a centrar verticalmente*/
 
-}
- header nav a{
-    display:inline-block;/*para que cada elemento del menu este al lado del otro y poder modificar el modelo de caja , es decir el alto ,ancho y margenes */
-    color:#66023C;
-    text-decoration: none;
-    padding:10px 20px; /*el padding me dara espacio hacia arriba y hacia abajo y hacia los costados */
-    line-height: nomal;
-    font-size: 20px; /*´para darle dimensión a la letra*/
-    font-weight:bolder;/*con este elemento le doy peso o grueso a la letra*/
-    -webkit-transition: all 500ms ease; /*la transicion sera a todas las propiedades para darle efecto al menu */
-    -moz-transition: all 500ms ease;
-    transition: all 500ms ease;
-    border-radius: 10px;
-
- }
-
-header nav a:hover{  /*aqui defino el color de transicion entre elementos del menu*/
-    background-color:#E6E6FA ;/*defino los colores con una paleta de colores*/
-    border-radius: 10px;
- }
+ 
 .subtitulo{
     text-align: left;
 }
