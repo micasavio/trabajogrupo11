@@ -11,8 +11,9 @@
 </head>
 <body>
   <header>
+    <section>
     <!--aca quiero armar un encabezado con el logo y con un menu desde el header y le coloco el numnero dos para que desde-->
-      <div class="cuadro">
+      <div class="boxlogo">
         <div class="logo">
           <img src="/images/logo.png" alt="logo"width="80" height="80" >
         </div>
@@ -30,10 +31,10 @@
     </nav>
         </div>
       </header>
-             
+    </section>   
   <main>   
     <section>   
-    <div class="wrapper"><!--al poner wrapper dentro de las clases me centro el contenido pero se puede sacar y hacerlo desde css-->
+    <div class="titulo">
    
       <h1>Curso de Elaboración de Tortas para Principiantes</h1>
       <p> Este curso te va a permitir aprender paso a paso técnicas básicas y elementales de la pasteleria, para sorprender a tus invitados o para vender. Realizaras mezclas deliciosas y presentaciones sin complicaciones que te harán ver como todo un profesional. Los videos están grabados en excelente definición  para que no te pierdas ni un detalle de las preparaciones, y que todo te salga perfecto. El curso tiene validez de un año desde el momento de la compra. Inscribite ya!</p>
@@ -43,7 +44,7 @@
 </section>  
 <section>
   <ul> 
-    <div class="contenedor-objetivos wrapper" >
+    <div class="objetivoscontainer" >
       <h2>Objetivos</h2>
        <li>aprender las técnicas básicas de preparación, cocción y manipulación.</li>
        <li>Conocer las cualidades y calidad de las materias primas a utilizar en las diversas recetas</li>
@@ -54,41 +55,32 @@
 </section>  
 
 
-  <!--el main es una etiqueta que nos dice que dentro de ella va el contenido principal de la pagina -->
+ 
  <section>
-    <div class="wrapper">  
-<section class="cursos contenedor" id="cursos"> <!--lo divido en seccion para agregar un subtitulo-->
-  <h2 class="contenedor-curso">Nuestros cursos</h2>
-
+      
+<div class="nuestroscursos" id="cursos"> <!--lo divido en seccion para agregar un subtitulo-->
+  <h2>Nuestros cursos</h2>
   <video src="/MEDIA/SnapSave.io-Como decorar tu primer pastel. Nivel Principiantes-(480p).mp4" controls preload="auto" width="350"></video>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nemo fugiat aperiam eligendi qui magni earum maxime exercitationem sequi! Inventore.</p>
   </div>
-</div>
-</div>
+  <div>
+
 </section>
 
-<!--creo otra seccion para dividir las secciones,valga la redundancia y que quede separado-->
 <section>
-
-<section class="galeria" id="Galeria">
-
-    <div class="contenedor wrapper" >
-      <h2 class="subtitulo">Galeria</h2>
+  <div class="subtitulocontener"  class="galeria" id="Galeria">
+    <h2 class="subtitulo">Galeria</h2>
       <div clas="contenedor-galeria" >
-        <img src="/IMG/mujermostrando torta.jpg" alt="img-galeria"width="150" height="150" > <!--quitar las medidas y ponerlas con css-->
+        <img src="/IMG/mujermostrando torta.jpg" alt="img-galeria"width="150" height="150" > <!--quitar las medidas y ponerlas con css?-->
         <img src="/IMG/mano iniciando el praprado.jpg" alt="img-galeria"width="150" height="150" >
         <img src="/IMG/ingredientes.jpg" alt="imag-galeria"width="150" height="150" >
         <img src="/IMG/manoponiendo rellenos.jpg" alt="img-galeria"width="150" height="150" >
         <img src="/IMG/mujeren curso .jpg" alt="img-galeria"width="150" height="150" >
-
       </div>
-       
-    </div>
- 
+    
 </section>
-<div class="preparaciones" id="Preparaciones">
 
-  <div class="contenedor-preparaciones wrapper" >
+<div class="preparaciones" id="Preparaciones">
 <ul>
   <h2>Preparaciones</h2>
   <li>Cheesecake</li>
@@ -106,22 +98,20 @@
              
     
     <script src="app.js"></script>
-    <div class="contenedor-modalidad de cursada wrapper" >
 
-      <h2>Modalidad de cursada</h2>
+    <div class="contenedor-modalidad de cursada" id="cursada">
+        <h2>Modalidad de cursada</h2>
        <p>El curso consta de 10 clases virtuales de 2 horas de duracion que las podes ver todas las veces que quieras mientras dura el curso</p>
-    </ul>
   </div>
     
-  <div class="contenedor-conoce nuestros cursos wrapper" >
+  <div class="contenedor-conoce nuestros cursos " id="nuestroscursos" >
     <h2>Conoce nuestros cursos</h2><img src="/images/gla1.jpg" alt="Imagen de nuestro curso "
     width="350" height="200">
 
     </div>
     
-  <div class="contenedor-subtitulo wrapper" >
+    <div class="contenedor-subtitulo " >
     <h2 class="subtitulo">¿Te gustaría recibir más información?</h2>
-    <div clas="contenedor-subtitulo" >
       </div>
     <br>
 
