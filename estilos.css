@@ -16,7 +16,7 @@ header{
     
 
 }
-.cuadro{
+.boxlogo{ /*con el punto antes de boxlogo logro llamar al elemento*/
     width: 80%;/*con estas medidas trabajo lo que es la caja del logo y el nav,pero voy a necesitar un margen */
     height: 70px;
     margin:auto;/*con esto lo centro*/
@@ -50,13 +50,6 @@ nav ul li a{
 }
 nav ul li a:hover{/*cuando pasamos el mouse el color va a cambiar sobre la palabra*/
 color:blue;
-}
-
-.wrapper { /*esta clase nos centra  el contenido y lo utilizamos en html en todo lo que queramos centrar */
-    width: 90%; /* ancho de toda la pagina*/
-    max-width: 1200px;/*con este elemento logre darle un marco y espacio al encabezado ,separando los items del logo */
-    margin: auto; /*con este margin lo centramos */
-    overflow: hidden;
 }
 
 
