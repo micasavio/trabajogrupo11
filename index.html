@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="curso, tortas" content="width=device-width, initial-scale=1.0">
     <title>Curso  de Elaboracion de Tortas</title>
-    <link rel="icon" href="/images/logo.png">
+    <link rel="icon" href="/images/logo.jpg">
     <link rel="stylesheet" href="estilos.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 </head>
@@ -15,7 +15,7 @@
     <!--aca quiero armar un encabezado con el logo y con un menu desde el header y le coloco el numnero dos para que desde-->
       <div class="boxlogo">
         <div class="logo">
-          <img src="/images/logo.png" alt="logo"width="80" height="80" >
+          <img src="/images/logo.jpg" alt="logo"width="80" height="80" >
         </div>
     <nav>
       <ul><!--armo el menu  con nav y un elemento "a" para poder centrarlos mejor ,que si lo hiciera con una lista -->
@@ -60,7 +60,7 @@
       
 <div class="nuestroscursos" id="cursos"> <!--lo divido en seccion para agregar un subtitulo-->
   <h2>Nuestros cursos</h2>
-  <video src="/MEDIA/SnapSave.io-Como decorar tu primer pastel. Nivel Principiantes-(480p).mp4" controls preload="auto" width="350"></video>
+  <video src="/media/glavideo.mp4" controls preload="auto" width="350"></video>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nemo fugiat aperiam eligendi qui magni earum maxime exercitationem sequi! Inventore.</p>
   </div>
   <div>
@@ -95,9 +95,6 @@
 </div>
 </section>
   
-             
-    
-    <script src="app.js"></script>
 
     <div class="contenedor-modalidad de cursada" id="cursada">
         <h2>Modalidad de cursada</h2>
@@ -126,7 +123,7 @@
           <p class="text-danger small pt-0 mt-0">*Todos los campos son obligatorios</p> <!--Quiero correr a la derecha el formulario porque queda chico y no se porque -->
           <form>
               <div class="row form-group">
-                  <label for="nombre " class="col-form-label col-md-4">Nombre</label>
+                  <label for="nombre"  class="col-form-label col-md-4">Nombre</label>
                   <div class="col-md-8">
                       <input type="tex" name="nombre" value="" id="nombre" class="form-control">
   
@@ -143,7 +140,7 @@
                   <label for="mensaje" class="col-from-label col-md-4">Mensaje</label>
                   <div class="col-md8">
                       <textarea rows="3" class="form-control" id="mensaje" name="mensaje"></textarea>
-                      <button type="submit" class="btn btn-info">Enviar</button>
+                      <button type="submit" id="usuario" class="btn btn-info">Enviar</button>
                      
                   </div>
               </div>
@@ -153,9 +150,10 @@
         </div>
     
     <h4>Si ya te decidiste, no esperes mas!!! </h4>
-     <button onclick="alert('Gracias por comprar nuestros cursos')">Comprar.</button>
+     <button onclick="alert('Gracias por comprar nuestros cursos')">Comprar.</button> 
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
-      </main>
+     <script src="app.js"></script>
+    </main>
 </body>
 <footer>
   poner copirych integrantes y nombre de la empresa una reseña de cada integrante si es posible una foto (opcional)
