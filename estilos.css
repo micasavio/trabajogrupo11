@@ -22,7 +22,7 @@ header{
     margin:auto;/*con esto lo centro*/
 }
 .logo{
-    width: 30%;
+    width: 10%;
     height: 70px;
     float:left;/*con esto le pido que se acomode dentro de los parametros posible ,que se fuera a la izquierda lo mas posible dentro de ese ancho establecido*/
 }
@@ -31,7 +31,7 @@ header{
 nav{
     width: 70%;/*aca es de 70 porque sumado al 30 me da el 100 del ancho que puse antes */
     float:left;/*lo mismo que el logo, que se acomode*/
-    text-align: right;/*para que nuestro texto se vaya a la derecha*/
+    text-align: center;/*para que nuestro texto se vaya a la derecha*/
     padding-top: 24px; /*para que las letras bajen. Todo lo que queramos que baje sera en el nav*/
     box-sizing: border-box; /*debo ponerlo porque paddin me desbordo y el box-sizing lo evita , lo contiene*/
 }
