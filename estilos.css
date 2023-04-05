@@ -95,3 +95,10 @@ h4{
     background-position: center;
     
 }
+.zoom{
+    transition:transform .2s; /*este atributo le da una transicion mas natural al pasar el mouse*/
+
+}
+.zoom:hover{
+    transform: scale(2.5); /* con el hover logro que al pasar el mouse tenga efecto*/
+}
