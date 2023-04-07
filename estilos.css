@@ -11,14 +11,14 @@
 
 header{
     width: 100%;/*ancho*/
-    background: violet;
+    background: rgb(232, 218, 232);
     height: 90px;/*altura*/
     
 
 }
 .boxlogo{ /*con el punto antes de boxlogo logro llamar al elemento*/
-    width: 80%;/*con estas medidas trabajo lo que es la caja del logo y el nav,pero voy a necesitar un margen */
-    height: 70px;
+    width: 90%;/*con estas medidas trabajo lo que es la caja del logo y el nav,pero voy a necesitar un margen */
+    height:70px;
     margin:auto;/*con esto lo centro*/
 }
 .logo{
@@ -29,7 +29,7 @@ header{
 
 
 nav{
-    width: 70%;/*aca es de 70 porque sumado al 30 me da el 100 del ancho que puse antes */
+    width: 80%;/*aca es de 70 porque sumado al 30 me da el 100 del ancho que puse antes */
     float:left;/*lo mismo que el logo, que se acomode*/
     text-align: center;/*para que nuestro texto se vaya a la derecha*/
     padding-top: 24px; /*para que las letras bajen. Todo lo que queramos que baje sera en el nav*/
@@ -56,18 +56,25 @@ color:blue;
  
 .subtitulo{
     text-align: left;
+   
 }
 
 h1{
     color: #66023C;
     font-family: 'Oswald', sans-serif;
     font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-left: 20%;/*corri el titulo un poco a la izquierda */
+    padding: 8%;/*lo separe del header*/
+    font-size: 50px;/*le di dimension a la letra*/
 }
+    
 
 h2{
  color: #66023C;
  font-family: 'Oswald', sans-serif;
 font-family: 'Roboto', sans-serif;
+text-align: center;
 }
 
 h3{
@@ -76,6 +83,7 @@ h3{
     color:#1FA3D4;
     font-family: 'Oswald', sans-serif;
 font-family: 'Roboto', sans-serif;
+text-align: center;
 
 }
 h4{
@@ -86,6 +94,24 @@ h4{
     color: blue;
     cursor: pointer;
    } 
+   .button:hover{
+    transform: scale(2.5)
+}
+.card2{     /*boton con alerta , no tocarlo */
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color:#FFEDE3;
+   border-color: #D4487A;
+    padding:20px 50px;
+     border-radius: 20px;
+    -moz-box-shadow: 0px 4px 4px #D4487A;
+    -webkit-box-shadow: 0px 4px 4px #D4487A;
+    box-shadow: 0px 4px 4px #D4487A;
+
+   } 
+
 
    body{ 
     background-image: url(/images/Torta\ fondo.jpg); /*imagen de fondo de pantalla */
@@ -102,3 +128,77 @@ h4{
 .zoom:hover{
     transform: scale(2.5); /* con el hover logro que al pasar el mouse tenga efecto*/
 }
+ .youtube{
+    float:right
+ }
+ .video{
+    margin: 0 auto;
+    width: 300px;
+    display: block;
+   }
+        
+   
+   .subtitle  {
+    float:left
+   }
+
+.registro{font-family:Arial, Helvetica, sans-serif;
+   
+    font-weight:bold ;
+    color:blueviolet
+     }
+.form-label{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color:rgb(226, 43, 131);
+     }
+
+  
+     .card-container {/*genero las medidas de mi contenedor de formulario */
+        max-width: 300px;
+        height: 500px;
+        padding: 40px 40px ;
+        font-size:large;    
+        background-color:#FFEDE3;
+        position:absolute;
+        bottom: 0px;
+        right:  20px;
+        width: 200px;
+        top:80%;
+        border-radius: 4%;
+        -moz-box-shadow: 0px 4px 4px #D4487A;
+        -webkit-box-shadow: 0px 4px 4px #D4487A;
+        box-shadow: 0px 4px 4px #D4487A;
+    }
+    .terminos{
+        font-size: small;}
+      
+
+        .comprar{
+            position:absolute;
+            bottom: 0px;
+            right:  20px;/*cambiando los valores al pixel logre moverlo y despegarlo del lado derecho */
+            width: 190px;
+            height: 100px;
+            top:50%;
+        
+                }
+                .card-container2{
+                text-align: center;
+                width: 300px;
+                padding: 2% ;
+                font-size:1.5REM;    
+                background-color:#FFEDE3 ;
+                position:absolute;
+                bottom: 0px;
+                right:  20px;
+                width: 200px;
+                height: 200px;
+                top:40%;
+                border-radius: 4%;
+                -moz-box-shadow: 0px 4px 4px #D4487A;
+                -webkit-box-shadow: 0px 4px 4px #D4487A;
+                box-shadow: 0px 4px 4px #D4487A;
+                }
+                
+           
+    

@@ -20,13 +20,13 @@
     <nav>
       <ul><!--armo el menu  con nav y un elemento "a" para poder centrarlos mejor ,que si lo hiciera con una lista -->
         <li><a href="#">Inicio</a></li>
-        <li> <a href="#">Cursos</a></li>
-        <li> <a href="#">Modalidad de cursada</a></li>
-        <li> <a href="#">Perfil del alumno</a></li>
+        <li><a  href=https://www.youtube.com/watch?v=dDuOAuSy3ow>Nuestros cursos</a></li>
         <li> <a href="#">Galeria</a></li>
+       <li> <a href="#">Campus Virtual</a></li>
+        <li> <a href="#">Nosotros</a></li>
         <li><a href="#">Contacto</a></li>
-        <li><a href="#">Registro</a></li>
-      
+        <li><a href="#">Registrate</a></li>
+        
       </ul>
     </nav>
         </div>
@@ -58,17 +58,21 @@
  
  <section>
       
-<div class="nuestroscursos" id="cursos"> <!--lo divido en seccion para agregar un subtitulo-->
-  <h2>Nuestros cursos</h2>
+<div class="Conoce nuestros cursos " id="cursos"> <!--lo divido en seccion para agregar un subtitulo-->
+  <h2>Conoce nuestro cursos</h2>
+  
+</div> 
+<div class="video" alt="video de nuestros cursos">
   <video src="/media/glavideo.mp4" controls preload="auto" width="350"></video> <!--si la imagen o el video esta en una carpeta del proyecto ,no hay que poner "/" solo el nombre .jpg o .mp4-->
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nemo fugiat aperiam eligendi qui magni earum maxime exercitationem sequi! Inventore.</p>
   </div>
   <div>
+  </div>
 
 </section>
 
 <section>
-  <div class="subtitulocontener"  class="galeria" id="Galeria">
+  <div class="subtitulocontener"  alt="galeria" id="Galeria">
     <h2 class="subtitulo">Galeria</h2>
       <div clas="contenedor-galeria" >
         <img class="zoom" src="/images/Torta fondo.jpg" alt="imagen con zoom"  width="150" height="150" > <!--pude poner el .zomm !!-->
@@ -77,23 +81,24 @@
         <img4 src="/IMG/manoponiendo rellenos.jpg" alt="img-galeria"width="150" height="150" >
         <img5 src="/IMG/mujeren curso .jpg" alt="img-galeria"width="150" height="150" >
       </div>
+   
+    </section>
+    <ul>
+      <h2>Preparaciones</h2>
+      <li>Cheesecake</li>
+      <li>Cookies de chocolate</li>
+      <li>Cupcakes</li>
+      <li>Crumble de manzana</li>
+      <li>Selva negra</li>
+      <li>Torta bombóm</li>
+      <li>Torta de Ricota, dulce de leche y ambas</li>
+      <li>Decoracion de tortas, cupcakes y cookies</li>
+    </ul>
     
-</section>
+    </section>
+      
 
-<div class="preparaciones" id="Preparaciones">
-<ul>
-  <h2>Preparaciones</h2>
-  <li>Cheesecake</li>
-  <li>Cookies de chocolate</li>
-  <li>Cupcakes</li>
-  <li>Crumble de manzana</li>
-  <li>Selva negra</li>
-  <li>Torta bombóm</li>
-  <li>Torta de Ricota, dulce de leche y ambas</li>
-  <li>Decoracion de tortas, cupcakes y cookies</li>
-</ul>
-</div>
-</section>
+<section>
   
 
     <div class="contenedor-modalidad de cursada" id="cursada">
@@ -106,49 +111,82 @@
     width="350" height="200">
 
     </div>
+    <div class="contenedor-subtitulo">
     
-    <div class="contenedor-subtitulo " >
+    <div class="subtitle" >
     <h2 class="subtitulo">¿Te gustaría recibir más información?</h2>
       </div>
     <br>
 
-<div class="container justify-content-center">
-        
-  <div class="row">
+    <section class="formulario">
+      <div class="container">
+    <div class="card-container">
+
+   
+
+    <form class="row g-3">
       <div class="col-md-4">
-      <h2>Registrate</h2>
-          <hr class="bg-info">
+        <label for="validationDefault01" class="form-label">Nombre</label>
+        <div class="col-md-4">
+        <input type="text" class="form-control" id="validationDefault01" value="" required>
+      </div>
+      
+        <label for="validationDefault02" class="form-label">Apellido</label>
+        <div class="col-md-4">
+        <input type="text" class="form-control" id="validationDefault02" value="" required>
+      </div>
+      
+        <label for="validationDefaultUsername" class="form-label">Usuario</label>
+        <div class="col-md-4"></div>
+        <div class="input-group">
+          <span class="input-group-text" id="inputGroupPrepend2">@</span>
+          <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+        </div>
+      </div>
+      
+        <label for="validationDefault02" class="form-label">Contraseña</label>
+        <div class="col-md-4">
+        <input type="text" class="form-control" id="validationDefault02" value="" required>
+      </div>
+      
+
+        <label for="validationDefault03" class="form-label">Provincia</label>
+        <div class="col-md-4s">
+        <input type="text" class="form-control" id="validationDefault03" required>
+      </div>
+     <label for="validationDefault03" class="form-label">Ciudad</label>
+        <div class="col-md-4s">
+        <input type="text" class="form-control" id="validationDefault03" required>
+      </div>
+
+        <label for="validationDefault04" class="form-label">Cursos</label>
+        <div class="col-md-4">
+        <select class="form-select" id="validationDefault04" required>
+          <option selected disabled value="">Elige tu Cursos</option>
+          <option>Curso el ABC de la Pastelería</option>
+          <option>Pastelería saludable/vegana</option>
+          <option>Curso Decoración de Tortass</option>
+        </select>
+      </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+          <label class="form-check-label" for="invalidCheck2">
+            <div class="col-4"> 
+          Acepto los términos y condiciones
+          </label>
+        </div>
+      </div>
+      <div class="col-4">
         
-          
-          <p class="text-danger small pt-0 mt-0">*Todos los campos son obligatorios</p> <!--Quiero correr a la derecha el formulario porque queda chico y no se porque -->
-          <form>
-              <div class="row form-group">
-                  <label for="nombre"  class="col-form-label col-md-4">Nombre</label>
-                  <div class="col-md-8">
-                      <input type="tex" name="nombre" value="" id="nombre" class="form-control">
-  
-                  </div>
-              </div>
-              <div class="row form-group">
-                  <label for="email " class="col-form-label col-md-4">Ingresa tu correo</label>
-                  <div class="col-md-8">
-                      <input type="email" name="email" value="" id="email" class="form-control">
-                      
-                  </div>
-              </div>
-              <div class="row form-group">
-                  <label for="mensaje" class="col-from-label col-md-4">Mensaje</label>
-                  <div class="col-md8">
-                      <textarea rows="3" class="form-control" id="mensaje" name="mensaje"></textarea>
-                      <button type="submit" id="usuario" class="btn btn-info">Enviar</button>
-                     
-                  </div>
-              </div>
-          </form>
-        </div>
-    </div>
-        </div>
+        <button class="btn btn-primary" type="submit">Enviar</button>
+      </div>
+    </form>
     
+  </section>
+  <section class="card-container2">
+    
+     <div class="comprar">
+   
     <h4>Si ya te decidiste, no esperes mas!!! </h4>
      <button onclick="alert('Gracias por comprar nuestros cursos')">Comprar.</button> 
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
