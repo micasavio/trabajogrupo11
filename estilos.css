@@ -27,12 +27,12 @@ header{
 
 }
 .boxlogo{ /*con el punto antes de boxlogo logro llamar al elemento*/
-    width: 90%;/*con estas medidas trabajo lo que es la caja del logo y el nav,pero voy a necesitar un margen */
+    width: 80%;/*con estas medidas trabajo lo que es la caja del logo y el nav,pero voy a necesitar un margen */
     height:70px;
     margin:auto;/*con esto lo centro*/
 }
 .logo{
-    width: 10%;
+    width: 5%;
     height: 70px;
     float:left;/*con esto le pido que se acomode dentro de los parametros posible ,que se fuera a la izquierda lo mas posible dentro de ese ancho establecido*/
 }
@@ -49,8 +49,8 @@ nav ul li{
    display: inline ;/*con esto hago que mi menu se de ordene en fila hacia la derecha*/
 }
 nav ul li a{
-    color:#66023C;/*aqui voy modificando la letra de nuestro "li" y esto esta en nav ul li a */
-    font-size: 13px;/*tamaño de letra*/
+    color:#58094f;/*aqui voy modificando la letra de nuestro "li" y esto esta en nav ul li a */
+    font-size: 20px;/*tamaño de letra*/
     text-decoration: none;/*para que no tome ninguna decoracion */
     text-transform: uppercase;/*nos cambia la letra a mayusculas*/
     padding-left: 20px;/*esto es para que me separe el listado del menu y lo pondre  la izquierda*/
@@ -70,18 +70,20 @@ color:blue;
 .titulo{
 
     font-family: 'Lora', serif;
-    color: #420228;
-    font-size: 4rem;
+    color: #58094f;
+    font-size: 5rem;
     text-align: center;
-    padding:10% 
+    padding:10% ;
+
+
     
 
 }
 .parrafo{
-    color: #66023C;
+    color:#2c1f33 ;
     padding:10%; /*para alinearlo un poco*/
     font-family: 'Lora', serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
    
 }
@@ -89,7 +91,7 @@ color:blue;
 
 
 h2{
- color:#420228  ;
+ color:#841e62  ;
  font-family: 'Lora', serif;
 text-align: center;
 padding: 5%;
@@ -126,7 +128,7 @@ padding: auto;
         
         
    
-   .subtitle  {
+   .subtitle  {/**de formulario**/
     float:left
    }
 
@@ -135,22 +137,31 @@ padding: auto;
      /*card de boton de alerta*/
 
         .container-comprar{
+            
             text-align: center;
+            
             width: 300px;
             padding: 2% ;
-            font-size:1.5REM;    
-            background-color:white ;
+            font-size:2.0rem;    
+            background-color: white ;
             position:absolute;
             bottom: 0px;
-            right:  40px;
+            right:  5%;/*fui corriendo del margen derecho para ir centrandolo*/
             width: 400px;
             height: 200px;
-            top:40%;
+            top:150%;
             border-radius: 4%;
             -moz-box-shadow: 0px 4px 4px #D4487A;
             -webkit-box-shadow: 0px 4px 4px #D4487A;
             box-shadow: 0px 4px 4px #D4487A;
+            
         
+                }
+
+                .alerta-tex{
+                    font-size:35PX;
+                    color:rgb(226, 43, 131);
+                    
                 }
 
                /*card de formulario*/    
@@ -164,6 +175,8 @@ padding: auto;
             position:absolute;
             right: 2%;
             margin-bottom: 20%;}
+        
+        
      
            /*texto de formulario*/
        .form-label{
@@ -182,14 +195,14 @@ font-weight:bold;
 .subtitulo{
     font-size: 1,5rem; /*´para darle dimensión a la letra para el REGISTRO*/
     font-weight:bolder;
-    color:#54f24b;
+    color:#841e62;
     font-family: 'Lora', serif;
 text-align:left
 
 }
 
 .objetivos{
-    color: #420228;
+    color: #841e62;
     padding:4%; /*para alinearlo un poco*/
     font-family: 'Lora', serif;
     text-align: left;
@@ -198,13 +211,16 @@ text-align:left
 .item{
     font-family: 'Lora', serif;
     font-size: 1.5rem;
-
+    color: #2c1f33;
    
 }
 .preparaciones{
-    color: #420228;
+    color: #982471;
     padding:10%; /*para alinearlo un poco*/
     font-family: 'Lora', serif;
     text-align: left;
     padding: 4%;
+}
+.regitrate{
+    font-size: 20px;
 }
