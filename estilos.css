@@ -84,7 +84,7 @@ color:blue;
     padding:10%; /*para alinearlo un poco*/
     font-family: 'Lora', serif;
     font-size: 2rem;
-    text-align: center;
+    text-align:left;
    
 }
 
@@ -193,7 +193,7 @@ font-weight:bold;
         
 }
 .subtitulo{
-    font-size: 1,5rem; /*´para darle dimensión a la letra para el REGISTRO*/
+    font-size: 1,5rem; /*´para darle dimensión a la letra para el REGISTRO en formulario*/
     font-weight:bolder;
     color:#841e62;
     font-family: 'Lora', serif;
@@ -203,9 +203,10 @@ text-align:left
 
 .objetivos{
     color: #841e62;
-    padding:4%; /*para alinearlo un poco*/
+    padding:10%; /*para alinearlo un poco*/
     font-family: 'Lora', serif;
     text-align: left;
+    font-size:50px ;
     
 }
 .item{
@@ -219,8 +220,31 @@ text-align:left
     padding:10%; /*para alinearlo un poco*/
     font-family: 'Lora', serif;
     text-align: left;
-    padding: 4%;
+    font-size:50px ;
+   
 }
-.regitrate{
-    font-size: 20px;
+
+.conocenos{
+    color: #982471;
+    padding:10%; /*para alinearlo un poco*/
+    font-family: 'Lora', serif;
+    text-align: left;
+    font-size:50px ;
+}
+
+
+.modalidad{
+ 
+     color: #982471;
+    padding:10%; /*para alinearlo un poco*/
+    text-align: left;
+    font-size:50px ;
+   
+}
+/*texto de modalidad*/
+.text-parrafo{
+    color: #2c1f33;
+    font-family: 'Lora', serif;
+    font-size: 25px;
+  
 }
