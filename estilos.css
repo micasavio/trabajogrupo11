@@ -248,5 +248,84 @@ font-weight:bold;
     color: #2c1f33;
     font-family: 'Lora', serif;
     font-size: 20px;
-  
+}
+/*margenes por defecto, todo para el footer*/
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.pie{
+    background-color: rgb(247, 210, 215);
+    size: 10px;
+    border: 20px;
+}
+img{
+    width: 30px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;/* espacio entre logo y texto*/
+}
+.ini{/* enlaces a las diferentes paginas*/
+    color: blueviolet;
+    padding: 5px;
+}
+.fb{
+    color: blue;
+    padding: 5px;
+}
+.ins{
+color: aqua;
+padding: 5px;
+}
+.tw{
+    color: cadetblue;
+    padding: 5px;
+}
+.lkd{
+    color: darkslateblue;
+    padding: 5px;
+}
+.section2{
+    padding: 10px;
+    display: flex;
+    justify-content: right;/* coloca los enlaces del otro lado*/
+    align-items: stretch;
+    max-width: 1200px;
+    
+}
+.logotipo{
+    font-size: small;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.secciones{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1500px;
+    gap: 10px;
+}
+.secciones div{
+    display: flex;
+    flex-direction: column;
+}
+.nosotros{
+    font-size: 15px;
+    max-width: 500px;
+}
+.email23{
+    padding: 10px 12px;
+    font-size: 12px;
+}
+.mensaje23{
+    padding: 10px;
+    font-size: 12px;
+}
+button{
+    padding: 10px 12px;
+    font-size: 12px;
+    color: blueviolet;
 }
