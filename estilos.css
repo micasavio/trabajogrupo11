@@ -1,17 +1,7 @@
-
-
-
-
-
 *{
     margin: 0; /*le quieto los margenes por defecto */
     padding:0;
-    box-sizing: border-box;
-    font-family: 'IBM Plex Serif', serif;
-    font-family: 'Lora', serif;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Oswald', sans-serif;
-    font-family: 'Red Hat Display', sans-serif;
+   
 }
 
 body{ 
@@ -247,14 +237,7 @@ font-weight:bold;
     font-family: 'Lora', serif;
     font-size: 20px;
 }
-/*margenes por defecto, todo para el footer*/
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
-}
+/* footer*/
 .pie{
     background-color: rgb(247, 210, 215);
     size: 10px;
@@ -277,8 +260,8 @@ img{
     padding: 5px;
 }
 .ins{
-color: aqua;
-padding: 5px;
+    color: aqua;
+    padding: 5px;
 }
 .tw{
     color: cadetblue;
@@ -293,6 +276,35 @@ padding: 5px;
     display: flex;
     justify-content: right;/* coloca los enlaces del otro lado*/
     align-items: stretch;
-    max-width: 1200px;
-    
+}
+.logotipo{
+    font-size: small;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.secciones{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1500px;
+    gap: 10px;
+}
+.secciones div{
+    display: flex;
+    flex-direction: column;
+}
+.nosotros{
+    font-size: 15px;
+    max-width: 500px;
+}
+.email23{
+    padding: 10px 12px;
+    font-size: 12px;
+}
+.mensaje23{
+    padding: 10px;
+    font-size: 12px;
+}
+button{
+    padding: 10px 12px;
+    font-size: 12px;
+    color: blueviolet;
 }
