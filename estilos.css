@@ -6,7 +6,12 @@
 *{
     margin: 0; /*le quieto los margenes por defecto */
     padding:0;
-   
+    box-sizing: border-box;
+    font-family: 'IBM Plex Serif', serif;
+    font-family: 'Lora', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 body{ 
@@ -28,12 +33,12 @@ header{
 }
 .boxlogo{ /*con el punto antes de boxlogo logro llamar al elemento*/
     width: 80%;/*con estas medidas trabajo lo que es la caja del logo y el nav,pero voy a necesitar un margen */
-    height:70px;
+    
     margin:auto;/*con esto lo centro*/
 }
 .logo{
     width: 5%;
-    height: 70px;
+   
     float:left;/*con esto le pido que se acomode dentro de los parametros posible ,que se fuera a la izquierda lo mas posible dentro de ese ancho establecido*/
 }
 
@@ -42,7 +47,7 @@ nav{
     width: 80%;/*aca es de 70 porque sumado al 30 me da el 100 del ancho que puse antes */
     float:left;/*lo mismo que el logo, que se acomode*/
     text-align: center;/*para que nuestro texto se vaya a la derecha*/
-    padding-top: 24px; /*para que las letras bajen. Todo lo que queramos que baje sera en el nav*/
+    margin-top: 24px; /*para que las letras bajen. Todo lo que queramos que baje sera en el nav*/
     box-sizing: border-box; /*debo ponerlo porque paddin me desbordo y el box-sizing lo evita , lo contiene*/
 }
 nav ul li{
@@ -53,7 +58,7 @@ nav ul li a{
     font-size: 20px;/*tamaño de letra*/
     text-decoration: none;/*para que no tome ninguna decoracion */
     text-transform: uppercase;/*nos cambia la letra a mayusculas*/
-    padding-left: 20px;/*esto es para que me separe el listado del menu y lo pondre  la izquierda*/
+    margin-left: 20px;/*esto es para que me separe el listado del menu y lo pondre  la izquierda*/
     font-weight:bold ;/*letra en negrita*/
     letter-spacing: 2px;/*con esto genero un espacio entre las letras de una misma palabra*/
     
@@ -73,7 +78,7 @@ color:blue;
     color: #58094f;
     font-size: 50px;
     text-align: center;
-    padding:3% ;  
+    margin:3% ;  
     
 }
 
@@ -81,7 +86,7 @@ color:blue;
 
 .parrafo{
     color:#2c1f33 ;
-    padding:2%; /*para alinearlo un poco*/
+    margin:2%; /*para alinearlo un poco*/
     font-family: 'Lora', serif;
     font-size:25px;
     text-align:left;
@@ -95,7 +100,7 @@ h2{
  color:#841e62  ;
  font-family: 'Lora', serif;
 text-align: center;
-padding: 1%;
+margin: 1%;
 }
 
 
@@ -134,7 +139,7 @@ padding: 1%;
         .container-comprar{
              text-align: center;
              width: 300px;
-            padding: 2% ;
+            margin: 2% ;
             font-size:2.0rem;    
             background-color: #FFDFBF ;
             position:absolute;
@@ -206,7 +211,7 @@ font-weight:bold;
 
 .objetivos{
     color: #982471;
-    padding:1%; /*para alinearlo un poco*/
+    margin:1%; /*para alinearlo un poco*/
     font-family: 'Lora', serif;
     text-align: left;
     font-size:35px ;
@@ -219,26 +224,19 @@ font-weight:bold;
 }
 .preparaciones{
     color: #982471;
-    padding:1%; /*para alinearlo un poco*/
+    margin:1%; /*para alinearlo un poco*/
     font-family: 'Lora', serif;
     text-align: left;
     font-size:35px ;
    
 }
 
-.conocenos{
-    color: #982471;
-    padding:1%; 
-    text-align: left;
-    font-size:35px ;
-   
-}
 
 
 .modalidad{
  
     color: #982471;
-    padding:1%; 
+    margin:1%; 
     text-align: left;
     font-size:35px ;
    
@@ -249,4 +247,85 @@ font-weight:bold;
     font-family: 'Lora', serif;
     font-size: 20px;
   
+}
+/*margenes por defecto, todo para el footer*/
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.pie{
+    background-color: rgb(247, 210, 215);
+    size: 10px;
+    border: 20px;
+}
+img{
+    width: 30px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;/* espacio entre logo y texto*/
+}
+.ini{/* enlaces a las diferentes paginas*/
+    color: blueviolet;
+    padding: 5px;
+}
+.fb{
+    color: blue;
+    padding: 5px;
+}
+.ins{
+color: aqua;
+padding: 5px;
+}
+.tw{
+    color: cadetblue;
+    padding: 5px;
+}
+.lkd{
+    color: darkslateblue;
+    padding: 5px;
+}
+.section2{
+    padding: 10px;
+    display: flex;
+    justify-content: right;/* coloca los enlaces del otro lado*/
+    align-items: stretch;
+    max-width: 1200px;
+    
+}
+.logotipo{
+    font-size: small;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.secciones{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1500px;
+    gap: 10px;
+}
+.secciones div{
+    display: flex;
+    flex-direction: column;
+}
+.nosotros{
+    font-family: 'Lora', serif;
+    font-size: 15px;
+    max-width: 500px;
+}
+.email23{
+    padding: 10px 12px;
+    font-size: 12px;
+}
+.mensaje23{
+    padding: 10px;
+    font-size: 12px;
+}
+button{
+    padding: 10px 12px;
+    font-size: 12px;
+    color: blueviolet;
 }

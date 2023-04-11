@@ -7,9 +7,9 @@
     <title>Curso  de Elaboracion de Tortas</title>
     <link rel="icon" href="/images/logo.jpg">
     <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;700&family=Lora:ital,wght@0,700;1,400&family=Montserrat:wght@900&family=Oswald:wght@600&family=Red+Hat+Display:wght@400;600;900&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;700&family=Lora:ital,wght@0,700;1,400&family=Montserrat:ital,wght@0,400;0,500;0,700;0,800;1,400;1,600&family=Oswald:wght@600&family=Red+Hat+Display:wght@400;600;900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
 <body>
@@ -18,7 +18,7 @@
     <!--aca quiero armar un encabezado con el logo y con un menu desde el header y le coloco el numnero dos para que desde-->
       <div class="boxlogo">
         <div class="logo">
-          <img src="/images/logo.jpg" alt="logo"width="80" height="80" >
+          <img src="/images/logo.jpg" alt="logo"width="90" height="90" >
         </div>
     <nav>
       <ul><!--armo el menu  con nav y un elemento "a" para poder centrarlos mejor ,que si lo hiciera con una lista -->
@@ -84,8 +84,7 @@
 <section>
   <div class="subtitulocontener"  alt="galeria" id="Galeria">
     <h2 class="subtitulo">Galeria</h2>
-      <div clas="contenedor-galeria" >
-        <img class="zoom" src="/images/Torta fondo.jpg" alt="imagen con zoom"  width="150" height="150" > <!--pude poner el .zomm !!-->
+     <img class="zoom" src="/images/Torta fondo.jpg" alt="imagen con zoom"  width="150" height="150" > <!--pude poner el .zomm !!-->
         <img2 src="/IMG/mano iniciando el praprado.jpg" alt="img-galeria"width="150" height="150" >
         <img3 src="/IMG/ingredientes.jpg" alt="imag-galeria"width="150" height="150" >
         <img4 src="/IMG/manoponiendo rellenos.jpg" alt="img-galeria"width="150" height="150" >
@@ -121,12 +120,7 @@
        <p class="text-parrafo">El curso consta de 10 clases virtuales de 2 horas de duracion.<br> Podés ver las clases todas las veces que quieras mientras dura el curso</p>
       </article>
    
-      <section >
-    <article class="concenos">
-        <h2 class="conocenos">Conocenos</h2>
-    <img src="/images/gla1.jpg" alt="Imagen de nuestro curso "
-    width="450" height="400"> <!--le saque la barra a /images , segun el tutor esta mal empezar con una barra , no se lee la url ( verificar)-->
-  </article>
+      
     
     <div class="subtitulo-formulario">
     
@@ -243,10 +237,52 @@
             }, false)
           })
       })()</script>
-</body>
-<footer>
-  poner copirych integrantes y nombre de la empresa una reseña de cada integrante si es posible una foto (opcional)
-  año ,tambien poner Argentina programa 4.0
+      
+<footer class="pie">
+  <div class="header">
+      <div class="logo">
+          <img src="images/logo jpg.jpg" alt="logo super dulce">
+          <p class="logotipo">Super Dulce</p>
+      </div>
+      <div class="redes">
+          <a href="URL"></a>
+      </div>
+  </div>
+  <hr>
+  <hr><!--linea blanca-->
+  <div  class="secciones">
+   <div class="section1">
+      <h5>Sobre Nosotros</h5>
+      <p class="nosotros">Super dulce surge en el 2020 con el objetivo de brindar un espacio de aprendizaje para aquellas personas que aisladas en cuarentena debido al virus del Covid-19 quisieran desarrollar su lado creativo y capacitarse para crear tortas y pasteles deliciosos.</p>
+   </div>
+    <div class="section2">
+      <h5>Contacto</h5>
+      <div class="section21">
+      <a href="index.html"class="ini">INICIO</a>
+      <a href="https://www.facebook.com/" class="fb"> FACEBOOK </a>
+      <a href="https://www.youtube.com/" target="_blank"class="yt"> YOUTUBE </a>
+      <a href="https://www.instagram.com/" target="_blank"class="ins"> INSTAGRAM </a>
+      <a href="https://twitter.com/" target="_blank"class="tw"> TWITTER </a>
+      <a href="https://www.linkedin.com/"target="-blank"class="lkd"> LINKEDIN </a>
+      </div>
+    </div>
+  
+      <div class="section3">
+        <h5>Dejanos tu mensaje</h5>
+       <form action="formulario"></form>
+       <input type="text" placeholder="Email" class="email23">
+       <input type="text" placeholder="Mensaje" class="mensaje23">
+       <button type="submit">Enviar</button>
+   </div>
+  </div>
+</div>
+  <div class="derechos">
+      <p>Argentina Programa 4.0. Comisión 175. Grupo 11:Nelida Gladis Correa, Micaela Savio</p>
+  </div>
+  
 </footer>
+</body>
+
+</body>
 
 </html>
