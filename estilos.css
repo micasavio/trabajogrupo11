@@ -1,6 +1,7 @@
 *{
     margin: 0; /*le quieto los margenes por defecto */
     padding:0;
+    box-sizing: border-box;
    
 }
 
@@ -17,8 +18,9 @@ body{
 header{
     width: 100%;/*ancho*/
     background: rgb(232, 218, 232);
-    height: 90px;/*altura*/
+    height: 70px;/*altura*/
     
+    /*contenedor del logo*/
 
 }
 .boxlogo{ /*con el punto antes de boxlogo logro llamar al elemento*/
@@ -26,7 +28,7 @@ header{
     
     margin:auto;/*con esto lo centro*/
 }
-.logo{
+.logo1{
     width: 5%;
    
     float:left;/*con esto le pido que se acomode dentro de los parametros posible ,que se fuera a la izquierda lo mas posible dentro de ese ancho establecido*/
@@ -59,43 +61,49 @@ color:blue;
 }
 
 
-
-
-  
-.titulo{
-
-    font-family: 'Lora', serif;
+/*encabezado*/
+#titulo{
     color: #58094f;
-    font-size: 50px;
     text-align: center;
-    margin:3% ;  
-    
+    font-size: 50px;
+    padding:35px;
+}
+/*clase texto*/
+.bienvenida{
+    font-size: 25px;
+    color:#2c1f33;
+}
+.texto{
+    color: #58094f;
+    font-size: 20px;
+
+} 
+
+/*id*/
+#subtitulos{ color: #841e62;
+
 }
 
-
-
+/*clase*/
 .parrafo{
-    color:#2c1f33 ;
-    margin:2%; /*para alinearlo un poco*/
-    font-family: 'Lora', serif;
-    font-size:25px;
-    text-align:left;
-   
-    
+    color:#2c1f33
+}
+#video{
+    color: #841e62;
 }
 
-
-
-h2{
- color:#841e62  ;
- font-family: 'Lora', serif;
-text-align: center;
-margin: 1%;
+#preparaciones{
+    color: #841e62;
 }
-
-
-
-
+.item{
+    color:#2c1f33
+}
+#modalidad{
+    color: #841e62;
+}
+#subtitulo-formulario{
+    color: #841e62;
+}
    button{     /*boton con alerta , no tocarlo */
     font-size: x-large;
     color: blue;
@@ -104,40 +112,20 @@ margin: 1%;
    .button:hover{
     transform: scale(2.5)
 }
-
-
-
-.zoom{
-    transition:transform .2s; /*este atributo le da una transicion mas natural al pasar el mouse*/
-
-}
-.zoom:hover{
-    transform: scale(2.5); /* con el hover logro que al pasar el mouse tenga efecto*/
-}
- 
-  
-        
-   
-   .subtitle  {/**de formulario**/
-    float:left
-   }
-
-
   
      /*card de boton de alerta*/
 
         .container-comprar{
              text-align: center;
              width: 300px;
-            margin: 2% ;
             font-size:2.0rem;    
             background-color: #FFDFBF ;
             position:absolute;
-            bottom: 0px;
-            right:  5%;/*fui corriendo del margen derecho para ir centrandolo*/
+            top:10px;
+            margin: 200px;
+            right:  20px;/*fui corriendo del margen derecho para ir centrandolo*/
             width: 400px;
             height: 250px;
-            top:220%;
             border-radius: 4%;
             -moz-box-shadow: 0px 4px 4px #D4487A;
             -webkit-box-shadow: 0px 4px 4px #D4487A;
@@ -145,11 +133,7 @@ margin: 1%;
             
         
                 }
-                .card-body{
-                    background-color: #FFDFBF;
-                    
-                 }
-                  
+               
 
                 .alerta-tex{
                     font-size:35PX;
@@ -159,6 +143,11 @@ margin: 1%;
 
                /*card de formulario*/  
                
+               .card-body{
+                background-color: #FFDFBF;
+                
+             }
+              
              
            .card{
             
@@ -167,22 +156,14 @@ margin: 1%;
             -moz-box-shadow: 0px 4px 4px #D4487A;
             -webkit-box-shadow: 0px 4px 4px #D4487A;
             box-shadow: 0px 4px 4px #D4487A;
-            position:absolute;
-            left: 56%;
-            margin-bottom: 30%;}
+            position:relative;/*ver cambio todavia qu eposicion deberia ir  , para subir el contenedor */
+           top:200%;
+           left: 1110px;
+           right: 40px;
+           bottom: 100%;
+           }
 
-             /*subtitulo¿te gustaria recibir...*/
-        
-             .subtitulo-formulario{
-                font-size: 25px; /*´para darle dimensión a la letra para el REGISTRO en formulario*/
-                font-weight:bolder;
-                color:#841e62;
-                font-family: 'Lora', serif;
              
-  
-            
-            }
-     
            /*texto de formulario*/
        .form-label{
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -199,47 +180,9 @@ font-weight:bold;
 }
 
 
-.objetivos{
-    color: #982471;
-    margin:1%; /*para alinearlo un poco*/
-    font-family: 'Lora', serif;
-    text-align: left;
-    font-size:35px ;
-}
-.item{
-    font-family: 'Lora', serif;
-    font-size: 20px;
-    color: #2c1f33;
-   
-}
-.preparaciones{
-    color: #982471;
-    margin:1%; /*para alinearlo un poco*/
-    font-family: 'Lora', serif;
-    text-align: left;
-    font-size:35px ;
-   
-}
-
-
-
-.modalidad{
- 
-    color: #982471;
-    margin:1%; 
-    text-align: left;
-    font-size:35px ;
-   
-}
-/*texto de modalidad*/
-.text-parrafo{
-    color: #2c1f33;
-    font-family: 'Lora', serif;
-    font-size: 20px;
-}
 /* footer*/
 .pie{
-    background-color: rgb(247, 210, 215);
+    background-color:rgb(232, 218, 232);
     size: 10px;
     border: 20px;
 }
@@ -272,7 +215,7 @@ img{
     padding: 5px;
 }
 .section2{
-    padding: 10px;
+    padding: 5px;
     display: flex;
     justify-content: right;/* coloca los enlaces del otro lado*/
     align-items: stretch;
