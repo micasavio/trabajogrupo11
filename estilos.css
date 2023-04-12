@@ -106,6 +106,9 @@ color:blue;
 #subtitulo-formulario{
     color: #841e62;
 }
+.im{
+    height: 800px;
+}
    button{     /*boton con alerta , no tocarlo */
     font-size: x-large;
     color: blue;
@@ -122,9 +125,9 @@ color:blue;
              width: 300px;
             font-size:2.0rem;    
             background-color: #FFDFBF ;
-            position:absolute;
+            /* position:absolute;
             top:10px;
-            margin: 200px;
+            margin: 200px; */
             right:  20px;/*fui corriendo del margen derecho para ir centrandolo*/
             width: 400px;
             height: 250px;
@@ -160,7 +163,7 @@ color:blue;
             box-shadow: 0px 4px 4px #D4487A;
             position:relative;/*ver cambio todavia qu eposicion deberia ir  , para subir el contenedor */
            top:200%;
-           left: 1110px;
+           /* left: 1110px; */
            right: 40px;
            bottom: 100%;
            }
