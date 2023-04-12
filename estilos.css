@@ -12,10 +12,10 @@ body{
      background-repeat: no-repeat;
      background-attachment:fixed ; /*<<<para que la imagen vaya hasta abajo*/
      background-position: center;
- 
+    min-height: calc(100vh - 70px - 400px);/*con este calculo reste los pixeles de altura de header y footer para que el footer quedara bien */
  }
 
-header{
+#header{
     width: 100%;/*ancho*/
     background: rgb(232, 218, 232);
     height: 70px;/*altura*/
@@ -29,7 +29,7 @@ header{
     margin:auto;/*con esto lo centro*/
 }
 .logo1{
-    width: 5%;
+
    
     float:left;/*con esto le pido que se acomode dentro de los parametros posible ,que se fuera a la izquierda lo mas posible dentro de ese ancho establecido*/
 }
@@ -72,6 +72,8 @@ color:blue;
 .bienvenida{
     font-size: 25px;
     color:#2c1f33;
+    
+
 }
 .texto{
     color: #58094f;
@@ -185,6 +187,9 @@ font-weight:bold;
     background-color:rgb(232, 218, 232);
     size: 10px;
     border: 20px;
+    width: 100%;/*le agregue el width y heigth para ubicar bien el footer restandole en el body lo que abarca, cualquier cosa sacar de nuevo*/
+    height: 400px;
+
 }
 img{
     width: 30px;
@@ -229,6 +234,7 @@ img{
     justify-content: space-evenly;
     max-width: 1500px;
     gap: 10px;
+   
 }
 .secciones div{
     display: flex;
