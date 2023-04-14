@@ -23,9 +23,9 @@
     <nav>
       <ul><!--armo el menu  con nav y un elemento "a" para poder centrarlos mejor ,que si lo hiciera con una lista -->
         <li><a href="#">Inicio</a></li>
-        <li><a  href=https://www.youtube.com/watch?v=dDuOAuSy3ow target="_blank">Nuestros cursos</a></li>
-        <li> <a href="#">Galeria</a></li>
-       <li> <a href="#">Campus Virtual</a></li>
+        <li><a href=https://www.youtube.com/watch?v=dDuOAuSy3ow target="_blank">Nuestros cursos</a></li>
+        <li><a href="#">Galeria</a></li>
+        <li><a href="#">Campus Virtual</a></li>
         <li> <a href="#">Nosotros</a></li>
         <li><a href="#">Contacto</a></li>
         <li><a href="#">Registrate</a></li>
@@ -61,34 +61,35 @@
 
 <h2>Conoce nuestro cursos</h2>
 
-</div> 
-<div class="video" alt="video de nuestros cursos">
-  <video src="media/glavideo.mp4" controls preload="auto" width="550"></video> <!--si la imagen o el video esta en una carpeta del proyecto ,no hay que poner "/" solo el nombre .jpg o .mp4-->
- 
-  </div>
-
+</div class="container-video"> 
+   <div class="video" alt="video de nuestros cursos">
+     <video src="media/glavideo.mp4" controls preload="auto" width="550"></video> <!--si la imagen o el video esta en una carpeta del proyecto ,no hay que poner "/" solo el nombre .jpg o .mp4-->
+   </div>
+</div>
 </section>
+<div class="container-card"><!--container para las tarjetas-->
      <div class="card1 text-align:left" style="width: 30rem;">
-      <img src="images/tortas elementos.jpg" class="card-img-top" alt="imagen de torta">
+      <img src="images/tortas elementos.jpg" class="card-img-top" alt="imagen de elementos de cocina">
       <div class="card-body">
-        <h5 class="card-title">Elementos</h5>
-        <p class="card-text"> Aprende a utilizar los elementos de cocina, y conoce todos los trucos para que tus tortas salgan perfectas</p>
+        <h5 class="card-title"><strong>Elementos</strong> </h5>
+        <p class="card-text"> Conoce sobre los utensillos de cocina especiales para pasteleria, las cualidades y calidad de las materias primas que se usarán en las diferentes recetas</p>
       </div>
     </div>
     <div class="card1" style="width: 25rem;">
       <img src="images/torta2.jpg" class="card-img-top" alt="imagen de torta">
       <div class="card-body">
-        <h5 class="card-title">Preparaciones</h5>
-        <p class="card-text">Realiza las preparaciones mas deliciosas: cheese cake, selva negra, crumble de manzana, torta bombom y más</p>
+        <h5 class="card-title"><strong>Preparaciones</strong> </h5>
+        <p class="card-text">Realiza las preparaciones mas deliciosas: Cheese Cake, Selva Negra, Crumble de Manzana, Torta Bombom, Torta Mouse de Chocolate y Almendras  y más</p>
       </div>
     </div>
     <div class="card1" style="width: 27.5rem;">
       <img src="images/torta3.jpg" class="card-img-top" alt="imagen de torta">
       <div class="card-body">
-        <h5 class="card-title">Decoraciones</h5>
-        <p class="card-text">Aprende la ultima moda en decoracion de tortas para que todas tus producciones destaquen</p>
+        <h5 class="card-title"><strong>Decoraciones</strong></h5>
+        <p class="card-text">Aprende diversas técnicas de ornamentación  como el modelado de figuras en pastas comestibles, la elaboración de flores de pasta de goma, el pastillaje y otras coberturas.</p>
       </div>
     </div>
+  </div>
 </section>  
 
     <section id="subtitulo-formulario">
@@ -96,14 +97,15 @@
     <h2>¿Te gustaría recibir más información?</h2>
     
       </div>
+  </div class="container-formulario"><!--container para el formulario-->
       <div class="formulario">
         
       <div class="card">
        <div class="card-body">
    
-           <form class="row g-3 needs-validation" novalidate id="usuario">
+           <form class="row g-3 needs-validation" novalidate>
                <div class="col-md-4">
-                 <label for="validationCustom01" class="form-label">Nombre</label>
+                 <label for="validationCustom01" class="form-label" id="usuario">Nombre</label>
                  <input type="text" class="form-control" id="validationCustom01" value="" required>
                  <div class="valid-feedback">
                    ¡Muy bien!
@@ -169,13 +171,11 @@
            </div>
       </div>
              </form>
-           
            </section>
+   </div>        
   <section >
   
     <div class="container-comprar">
-    
-   
     <h4 class="alerta-tex">Si ya te decidiste,no esperes más!!! </h4>
      <button onclick="alert('Gracias por comprar nuestros cursos')">Comprar</button> 
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
@@ -203,7 +203,7 @@
           })
       })()</script>
 
-<footer class="pie">
+<footer class="pie"><!--FOOTER-->
   <div class="header">
       <div class="logo-footer">
           <img src="images/logo.jpg" alt="logo super dulce">
@@ -223,7 +223,7 @@
     <div class="section2">
       <h5>Contacto</h5>
       <div class="section2">
-      <a href="index.html"class="ini">INICIO</a>
+      <a href="index.html#"class="ini">INICIO</a>
       <a href="https://www.facebook.com/" class="fb"> FACEBOOK </a>
       <a href="https://www.youtube.com/" target="_blank"class="yt"> YOUTUBE </a>
       <a href="https://www.instagram.com/" target="_blank"class="ins"> INSTAGRAM </a>
