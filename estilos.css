@@ -2,7 +2,6 @@
     margin: 0; /*le quieto los margenes por defecto */
     padding:0;
     box-sizing: border-box;
-   
 }
 
 body{ 
@@ -89,6 +88,7 @@ color:blue;
 }
 #video{
     color: #841e62;
+    margin-left: 20px;
 }
 
 #preparaciones{
@@ -99,8 +99,15 @@ color:blue;
 }
 #modalidad{
     color: #841e62;
+    margin-left: 20px;
+}
+.parrafo1{ /*texto abajo de modalidad */
+    color: black;
+    font-size: 25px;
+    margin-left: 60px;
 }
 #subtitulo-formulario{
+    margin-left: 1%;
     color: #841e62;
 }
 .im{
@@ -118,13 +125,18 @@ color:blue;
      /*card de boton de alerta*/
 
         .container-comprar{
-             text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: left;
              width: 300px;
             font-size:2.0rem;    
-            background-color: #FFDFBF ;
-            /* position:absolute;
+            background-color:rgb(255, 223, 191) ;
+             position:absolute;
             top:10px;
-            margin: 200px; */
+            margin: 500px; */
+            left: 600px;
             right:  20px;/*fui corriendo del margen derecho para ir centrandolo*/
             width: 400px;
             height: 250px;
@@ -140,21 +152,19 @@ color:blue;
 
                /*card de formulario*/  
                .card-body{
-                background-color: #FFDFBF;
+                background-color: rgb(255, 223, 191);
                  }
               
              
-           .card{
+           .card{ /* formulario*/
             width: 750px;
             border-radius: 4%;
             -moz-box-shadow: 0px 4px 4px #D4487A;
             -webkit-box-shadow: 0px 4px 4px #D4487A;
             box-shadow: 0px 4px 4px #D4487A;
-            position:relative;/*ver cambio todavia qu eposicion deberia ir  , para subir el contenedor */
-           top:200%;
-           /* left: 1110px; */
-           right: 40px;
-           bottom: 100%;
+            position:absolute;
+           margin-bottom: 5%;
+           margin-left: 20px;
            }
 
              
@@ -173,6 +183,7 @@ font-weight:bold;
 .container-video{/*contenedor de video */
    display: flex;
    padding: 30px;
+   margin-left: 60px;
 }
 .container-card{ /*contenedor de las tarjetas */
     flex-direction: row;
@@ -185,29 +196,24 @@ font-weight:bold;
     display: inline-block;
     margin-top: 30px;
     margin-right: 30px;
-    gap: 30px
-    width: 750px;
-            border-radius: 4%;
+    margin-left: 300px;
+    gap: 10px
+    width: 450px;
+            border-radius: 6%;
             -moz-box-shadow: 0px 4px 4px #D4487A;
             -webkit-box-shadow: 0px 4px 4px #D4487A;
             box-shadow: 0px 4px 4px #D4487A;
             position:relative;/*ver cambio todavia qu eposicion deberia ir, para subir el contenedor */
-           top:200%;
-           left: 1110px;
-           right: 40px;
            bottom: 100%;       
 }
-.container-formulario{/* contenedor formulario */
-    display: flex;
-    justify-content:flex-start;
-}
+
 /* footer*/
 .pie{
     background-color:rgb(232, 218, 232);
     size: 10px;
     border: 20px;
     width: 100%;/*le agregue el width y heigth para ubicar bien el footer restandole en el body lo que abarca, cualquier cosa sacar de nuevo*/
-    height: 300px;
+    height: 310px;
 
 }
 img{
