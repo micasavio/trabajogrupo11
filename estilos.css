@@ -2,6 +2,7 @@
     margin: 0; /*le quieto los margenes por defecto */
     padding:0;
     box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
 }
 
 body{ 
@@ -14,9 +15,9 @@ body{
     min-height: calc(100vh - 70px - 300px);/*con este calculo reste los pixeles de altura de header y footer para que el footer quedara bien */
  }
 
-#header{
+header{
     width: 100%;/*ancho*/
-    background: rgb(232, 218, 232);
+    background:linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
     height: 70px;/*altura*/
     align-items: center;
     
@@ -56,56 +57,47 @@ nav ul li a{
     
 }
 nav ul li a:hover{/*cuando pasamos el mouse el color va a cambiar sobre la palabra*/
-color:blue;
+color:#D4487A;
 }
 
 
 /*encabezado*/
-#titulo .title{
+.title{
     color: #58094f;
     text-align: center;
-    font-size: 50px;
-    text-shadow: 2px 5px #D4487A; ;
+    font-size: 90px;
+    margin:50px;/*el margin me separo el titulo de header */
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
 }
 /*clase texto*/
-.bienvenida{
-    font-size: 25px;
+p{
+    padding-left: 5%;
+    font-size: 20px;
     color:#2c1f33;
-    font-weight: bold; 
-    font-style: italic;
-    margin:10px;
-    text-align: left;
+    letter-spacing:2px;
+   
 }
 
 
-/*id*/
-#subtitulos{ color: #841e62;
 
-}
 
 /*clase*/
 .parrafo{
     color:#2c1f33
 }
-#video{
-    color: #e9089e;
-    margin-left: 20px;
+.subtitulo{
+    color:#58094f;
+    font-weight:bold ;
+  padding-left: 5%;
+ font-family:  'Times New Roman', Times, serif;
 }
 
+.video{
+    padding-left: 5%;
+}
 
-#modalidad{
-    color: #841e62;
-    margin-left: 20px;
-}
-.parrafo1{ /*texto abajo de modalidad */
-    color: rgb(151, 186, 10);
-    font-size: 25px;
-    margin-left: 60px;
-}
-#subtitulo-formulario{
-    margin-left: 1%;
-    color: #841e62;
-}
 .im{
     height: 800px;
 }
@@ -176,11 +168,7 @@ color:blue;
     color:rgb(226, 43, 131);
 font-weight:bold;        
 }
-.container-video{/*contenedor de video */
-   display: flex;
-   padding: 30px;
-   margin-left: 60px;
-}
+
 .container-card{ /*contenedor de las tarjetas */
     flex-direction: row;
     justify-content:left;
@@ -205,7 +193,7 @@ font-weight:bold;
 
 /* footer*/
 .pie{
-    background-color:rgb(232, 218, 232);
+    background: linear-gradient( to top, #a18cd1 0%, #fbc2eb 100%);
     size: 10px;
     border: 20px;
     width: 100%;/*le agregue el width y heigth para ubicar bien el footer restandole en el body lo que abarca, cualquier cosa sacar de nuevo*/
@@ -248,8 +236,9 @@ img{
     align-items: stretch;
 }
 .logotipo{
-    font-size: small;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    color:#8f06d9;
+    font-weight: bold;
 }
 .secciones{
     display: flex;
