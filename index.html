@@ -37,7 +37,7 @@
       
       <section id="titulo">
    
-        <h1>Curso de Elaboracion de tortas para principiantes</h1>
+        <h1 class="title">Curso de Elaboracion de tortas para principiantes</h1>
     
     <div class="texto">
       <p class="bienvenida"> Aprenderás técnicas básicas y elementales de la pastelería,para tu hogar,amigos o vender. <br>
@@ -67,6 +67,7 @@
    </div>
 </div>
 </section>
+
 <div class="container-card"><!--container para las tarjetas-->
      <div class="card1 text-align:left" style="width: 30rem;">
       <img src="images/tortas elementos.jpg" class="card-img-top" alt="imagen de elementos de cocina">
@@ -128,7 +129,7 @@
                    </div>
                  </div>
                </div>
-               <div class="col-md-6">
+               <div class="col-md-3">
                  <label for="validationCustom03" class="form-label">Ciudad</label>
                  <input type="text" class="form-control" id="validationCustom03" required>
                  <div class="invalid-feedback">
@@ -136,6 +137,13 @@
                  </div>
                </div>
                <div class="col-md-3">
+                <label for="validationCustom05" class="form-label">C.P.</label>
+                <input type="text" class="form-control" id="validationCustom05" required>
+                <div class="invalid-feedback">
+                  Proporcione un código postal válido.
+                </div>
+              </div>
+               <div class="col-md-6">
                  <label for="validationCustom04" class="form-label">Cursos</label>
                  <select class="form-select" id="validationCustom04" required>
                    <option selected disabled value="">Elige tu Cursos</option>
@@ -147,13 +155,7 @@
                Seleccione un curso válido.
                  </div>
                </div>
-               <div class="col-md-3">
-                 <label for="validationCustom05" class="form-label">C.P.</label>
-                 <input type="text" class="form-control" id="validationCustom05" required>
-                 <div class="invalid-feedback">
-                   Proporcione un código postal válido.
-                 </div>
-               </div>
+             
                <div class="col-12">
                  <div class="form-check">
                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>

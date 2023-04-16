@@ -5,13 +5,13 @@
 }
 
 body{ 
-    font-family: 'Lora', serif;
+  
     background-image: url(/images/Torta\ fondo.jpg); /*imagen de fondo de pantalla */
      background-size: cover; /*<<<para que nos cubra toda la página*/
      background-repeat: no-repeat;
      background-attachment:fixed ; /*<<<para que la imagen vaya hasta abajo*/
      background-position: center;
-    min-height: calc(100vh - 70px - 400px);/*con este calculo reste los pixeles de altura de header y footer para que el footer quedara bien */
+    min-height: calc(100vh - 70px - 300px);/*con este calculo reste los pixeles de altura de header y footer para que el footer quedara bien */
  }
 
 #header{
@@ -24,7 +24,7 @@ body{
 
 }
 .boxlogo{ /*con el punto antes de boxlogo logro llamar al elemento*/
-    width: 80%;/*con estas medidas trabajo lo que es la caja del logo y el nav,pero voy a necesitar un margen */
+    width: 70%;/*con estas medidas trabajo lo que es la caja del logo y el nav,pero voy a necesitar un margen */
     
     margin:auto;/*con esto lo centro*/
 }
@@ -61,21 +61,22 @@ color:blue;
 
 
 /*encabezado*/
-#titulo{
+#titulo .title{
     color: #58094f;
     text-align: center;
     font-size: 50px;
-    padding:35px;
+    text-shadow: 2px 5px #D4487A; ;
 }
 /*clase texto*/
 .bienvenida{
     font-size: 25px;
     color:#2c1f33;
+    font-weight: bold; 
+    font-style: italic;
+    margin:10px;
+    text-align: left;
 }
-.texto{
-    color: #58094f;
-    font-size: 20px;
-} 
+
 
 /*id*/
 #subtitulos{ color: #841e62;
@@ -87,22 +88,17 @@ color:blue;
     color:#2c1f33
 }
 #video{
-    color: #841e62;
+    color: #e9089e;
     margin-left: 20px;
 }
 
-#preparaciones{
-    color: #841e62;
-}
-.item{
-    color:#2c1f33
-}
+
 #modalidad{
     color: #841e62;
     margin-left: 20px;
 }
 .parrafo1{ /*texto abajo de modalidad */
-    color: black;
+    color: rgb(151, 186, 10);
     font-size: 25px;
     margin-left: 60px;
 }
@@ -129,16 +125,16 @@ color:blue;
             flex-wrap: wrap;
             justify-content: space-evenly;
             align-items: center;
-            text-align: left;
+            text-align: center;
              width: 300px;
             font-size:2.0rem;    
             background-color:rgb(255, 223, 191) ;
              position:absolute;
             top:10px;
-            margin: 500px; */
-            left: 600px;
-            right:  20px;/*fui corriendo del margen derecho para ir centrandolo*/
-            width: 400px;
+            margin: 350px; 
+          
+            right: 0;/*fui corriendo del margen derecho para ir centrandolo*/ 
+            width: 500px;
             height: 250px;
             border-radius: 4%;
             -moz-box-shadow: 0px 4px 4px #D4487A;
@@ -155,8 +151,8 @@ color:blue;
                 background-color: rgb(255, 223, 191);
                  }
               
-             
-           .card{ /* formulario*/
+             /* formulario*/
+           .card{ 
             width: 750px;
             border-radius: 4%;
             -moz-box-shadow: 0px 4px 4px #D4487A;
@@ -197,9 +193,9 @@ font-weight:bold;
     margin-top: 30px;
     margin-right: 30px;
     margin-left: 300px;
-    gap: 10px
+    gap: 10px;
     width: 450px;
-            border-radius: 6%;
+            border-radius: 4%;
             -moz-box-shadow: 0px 4px 4px #D4487A;
             -webkit-box-shadow: 0px 4px 4px #D4487A;
             box-shadow: 0px 4px 4px #D4487A;
