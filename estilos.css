@@ -1,5 +1,5 @@
 *{
-    margin: 0; /*le quieto los margenes por defecto */
+    margin: 0; /*le quito los margenes por defecto */
     padding:0;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
@@ -15,7 +15,7 @@ body{
     min-height: calc(100vh - 70px - 300px);/*con este calculo reste los pixeles de altura de header y footer para que el footer quedara bien */
  }
 
-header{
+ header{
     width: 100%;/*ancho*/
     background:linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
     height: 70px;/*altura*/
@@ -26,18 +26,26 @@ header{
 }
 .boxlogo{ /*con el punto antes de boxlogo logro llamar al elemento*/
     width: 70%;/*con estas medidas trabajo lo que es la caja del logo y el nav,pero voy a necesitar un margen */
-    
+   
     margin:auto;/*con esto lo centro*/
 }
 .logo1{
-
-    float:left;/*con esto le pido que se acomode dentro de los parametros posible ,que se fuera a la izquierda lo mas posible dentro de ese ancho establecido*/
+    margin: 20px;
+float: left;
 }
-
+.logoimg{
+  margin-top:-26px;
+   padding-left: 40px; 
+   font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    color:#58094f;
+    font-size: 25px;
+}
 
 nav{
     width: 80%;/*aca es de 70 porque sumado al 30 me da el 100 del ancho que puse antes */
-    float:left;/*lo mismo que el logo, que se acomode*/
+    float:right;/*lo mismo que el logo, que se acomode*/
     text-align: center;/*para que nuestro texto se vaya a la derecha*/
     margin-top: 24px; /*para que las letras bajen. Todo lo que queramos que baje sera en el nav*/
     box-sizing: border-box; /*debo ponerlo porque paddin me desbordo y el box-sizing lo evita , lo contiene*/
@@ -60,7 +68,6 @@ nav ul li a:hover{/*cuando pasamos el mouse el color va a cambiar sobre la palab
 color:#D4487A;
 }
 
-
 /*encabezado*/
 .title{
     color: #58094f;
@@ -79,8 +86,6 @@ p{
     letter-spacing:2px;
    
 }
-
-
 
 
 /*clase*/
@@ -150,11 +155,16 @@ p{
             -moz-box-shadow: 0px 4px 4px #D4487A;
             -webkit-box-shadow: 0px 4px 4px #D4487A;
             box-shadow: 0px 4px 4px #D4487A;
-            position:absolute;
-           margin-bottom: 5%;
-           margin-left: 20px;
+           
            }
-
+           #formulario{
+             
+            
+            display: inline-block;
+            margin-top: 30px;
+            margin-right: 30px;
+            margin-left: 100px;
+          }
              
            /*texto de formulario*/
        .form-label{
