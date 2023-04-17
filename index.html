@@ -71,7 +71,7 @@
 </section>
 <a name="Galeria"></a>
 <div class="container-card"><!--container para las tarjetas-->
-     <div class="card1 text-align:left" style="width: 30rem;">
+     <div class="card1 text-align:left" style="width: 34rem;">
       <img src="images/tortas elementos.jpg" class="card-img-top" alt="imagen de elementos de cocina">
       <div class="card-body">
         <h5 class="card-title"  style="color:#58094f"><strong>Elementos</strong> </h5>
@@ -243,9 +243,9 @@
       <div class="section3">
         <h5 class="subtitulo">Dejanos tu mensaje</h5>
        <form action="formulario"></form>
-       <input type="text" placeholder="Email" class="email23">
-       <input type="text" placeholder="Mensaje" class="mensaje23">
-       <button onclick="alert('Gracias por dejarnos tu mensaje. Te contestaremos a la brevedad')">Enviar</button> 
+       <input type="text" placeholder="nombre@example.com" required pattern="/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.([a-zA-Z]{2,4})+$/" id="email23">
+       <input type="text" placeholder="Mensaje"  required id="mensaje23">
+       <button onclick="hizoClick()" id="boton">Enviar</button> 
    </div>
   </div>
 </div>
