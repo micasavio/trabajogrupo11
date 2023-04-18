@@ -7,7 +7,7 @@
 
 body{ 
   
-    background-image: url(/images/Torta\ fondo.jpg); /*imagen de fondo de pantalla */
+    background-image: url(images/Torta\ fondo.jpg); /*imagen de fondo de pantalla */
      background-size: cover; /*<<<para que nos cubra toda la página*/
      background-repeat: no-repeat;
      background-attachment:fixed ; /*<<<para que la imagen vaya hasta abajo*/
@@ -18,29 +18,29 @@ body{
  header{
     width: 100%;/*ancho*/
     background:linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
-    height: 70px;/*altura*/
+    height: 80px;/*altura*/
     align-items: center;
+    margin: auto;
     
     /*contenedor del logo*/
 
 }
 .boxlogo{ /*con el punto antes de boxlogo logro llamar al elemento*/
-    width: 70%;/*con estas medidas trabajo lo que es la caja del logo y el nav,pero voy a necesitar un margen */
-   
+    width: 70%;/*con estas medidas trabajo lo que es la caja del logo y el nav,pero voy a necesitar un margen */  
     margin:auto;/*con esto lo centro*/
 }
 .logo1{
-    margin: 20px;
-float: left;
+    float: left;
 }
 .logoimg{
-  margin-top:-26px;
-   padding-left: 40px; 
+  margin-top:6px;
+   padding-left: 10px; 
    font-family:'Times New Roman', Times, serif;
     font-style: italic;
     font-weight: bold;
-    color:#58094f;
-    font-size: 25px;
+    color:rgb(255, 223, 191);
+    text-shadow:-3px -3px 1px #000;
+    font-size: 55px;
 }
 
 nav{
@@ -52,15 +52,17 @@ nav{
 }
 nav ul li{
    display: inline ;/*con esto hago que mi menu se de ordene en fila hacia la derecha*/
+   padding: 7px;
 }
 nav ul li a{
     color:#58094f;/*aqui voy modificando la letra de nuestro "li" y esto esta en nav ul li a */
     font-size: 20px;/*tamaño de letra*/
     text-decoration: none;/*para que no tome ninguna decoracion */
     text-transform: uppercase;/*nos cambia la letra a mayusculas*/
-    margin-left: 20px;/*esto es para que me separe el listado del menu y lo pondre  la izquierda*/
+    margin-left: 10px;/*esto es para que me separe el listado del menu y lo pondre  la izquierda*/
     font-weight:bold ;/*letra en negrita*/
     letter-spacing: 2px;/*con esto genero un espacio entre las letras de una misma palabra*/
+    word-spacing: 20px;
     
     
 }
@@ -123,7 +125,6 @@ p{
             justify-content: space-evenly;
             align-items: center;
             text-align: center;
-             width: 300px;
             font-size:2.0rem;    
             background-color:rgb(255, 223, 191) ;
              position:absolute;
@@ -131,7 +132,7 @@ p{
             margin: 350px; 
           
             right: 0;/*fui corriendo del margen derecho para ir centrandolo*/ 
-            width: 500px;
+            width: 400px;
             height: 250px;
             border-radius: 4%;
             -moz-box-shadow: 0px 4px 4px #D4487A;
@@ -190,8 +191,8 @@ font-weight:bold;
     display: inline-block;
     text-align: center;
     margin-top: 30px;
-    margin-right: 30px;
-    margin-left: 300px;
+    margin-right: 20px;
+    margin-left: 200px;
     gap: 10px;
     width: 450px;
             border-radius: 4%;
@@ -199,70 +200,60 @@ font-weight:bold;
             -webkit-box-shadow: 0px 4px 4px #D4487A;
             box-shadow: 0px 4px 4px #D4487A;
             position:relative;/*ver cambio todavia qu eposicion deberia ir, para subir el contenedor */
-           bottom: 100%;       
+            bottom: 100%;       
 }
 
 /* footer*/
 .pie{
-    background: linear-gradient( to top, #a18cd1 0%, #fbc2eb 100%);
+    background:linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
     size: 10px;
     border: 20px;
     width: 100%;/*le agregue el width y heigth para ubicar bien el footer restandole en el body lo que abarca, cualquier cosa sacar de nuevo*/
-    height: 310px;
+    height: 250px;
 
 }
 img{
-    width: 30px;
+    width: 40px;
 }
 .logo-footer{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
     float: left;
-    align-items: center;
-    gap: 10px;/* espacio entre logo y texto*/
-    
+    text-align: center;
+    gap: 20px;/* espacio entre logo y texto*/
 }
 .ini{/* enlaces a las diferentes paginas*/
     color: blueviolet;
-    padding: 5px;
-}
-.fb{
-    color: blue;
-    padding: 5px;
-}
-.ins{
-    color: aqua;
-    padding: 5px;
-}
-.tw{
-    color: cadetblue;
-    padding: 5px;
-}
-.lkd{
-    color: darkslateblue;
-    padding: 5px;
-}
-.section2{
-    padding: 5px;
-    display: flex;
-    justify-content: right;/* coloca los enlaces del otro lado*/
-    align-items: stretch;
+    padding: 10px;
+    font-size: 20px;
 }
 .logotipo{
-    font-size: 10px;
-    color:#8f06d9;
+    font-size: 50px;
+    color:rgb(255, 223, 191);
+    text-shadow:-3px -3px 1px #000;
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
     font-weight: bold;
-
 }
 .secciones{
     display: flex;
     justify-content: space-evenly;
-    max-width: 1500px;
-    gap: 10px;
-   
+    align-items: flex-start;
 }
-.secciones div{
+.seccion1{
     display: flex;
-    flex-direction: column;
 }
+.section2{  
+    padding: 10px;
+    display: flex;
+    justify-content: right;/* coloca los enlaces del otro lado*/
+    align-items: center;
+    gap: 10px;
+ }  
+ .section3{
+    margin-right: 40px;
+ }
 .nosotros{
     font-size: 15px;
     max-width: 500px;
