@@ -1,0 +1,293 @@
+
+:root {
+
+    /*palets*/
+    --primary-solid:#FF3333;
+    --primary-900:rgb(255, 51, 51, 0.9); /*90%transparencia*/
+    --primary-500:rgb(255, 51, 51, 0.5); /*50%*/
+    --primary-300:rgb(255, 51, 51, 0.3);/*25%*/
+
+    --secundary-solid: #1D84B5;
+    --secundary-900:rgb(29, 132, 181, 0.9);
+    --secundary-900:rgb(29, 132, 181, 0.5);
+    --secundary-900:rgb(29, 132, 181, 0.3);
+
+    --dark-solid: #1F1F1F;
+    --dark-900: rgb(31, 31, 31, 0.9);
+    --dark-500: rgb(31, 31, 31, 0.5);
+    --dark-300: rgb(31, 31, 31, 0.3);
+
+    --dar-bg-solid: #30343F; /*bg es de backgroundo para fondo*/
+    --ligth-bg-solid:#FAFAFF;
+    --ligth-font-solid: #FFFFFF;
+
+
+
+
+    /***typography***/
+
+    --base-font: 'Inter', sans-serif;
+    --alternative-font:'Raleway', sans-serif;
+
+    /***font-sizes***/
+
+    --font-display:4.6em;/* 16 pixeles por defecto*/
+    --font-jumbo:3.8em;
+    --font-large:3em;
+    --font-medium:1.8em;
+    --font-small:1.6em;
+    --font-xsmall:1.2em;
+
+    /**spacing -rellenos,distanciar elementos*/
+
+    --spacing-128: 12.8rem; /** usamos rem porque es mejor para el responsive , 1 rem es = 16 px o 10 px*/
+    --spacing-68: 6.8rem;
+    --spacing-36: 3.6rem;
+    --spacing-28: 2.8rem;
+    --spacing-16: 1.6rem;
+    --spacing-12: 1.2rem;
+    --spacing-8: 0.8rem;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;900&display=swap');
+*{
+    
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color:#000000;
+
+ 
+
+
+}
+
+
+html {
+    font-family: 'Inter', sans-serif;
+    font-size:62.5% ;
+    color:#1111;
+ }
+
+/*NAV*/
+
+
+ a {
+    text-decoration: none;
+    color:inherit;
+    font-family:inherit;
+    color: var(--ligth-font-solid)
+ } 
+ ul,ol {
+    list-style: none;
+ 
+ }
+ /*HEADER*/
+
+ .header{
+ 
+     height: 244px;
+     font-family: 'Raleway', sans-serif;;
+      background: var( --dark-solid);
+      
+      
+      
+}
+
+
+
+.navbar{
+   display:flex;
+   justify-content:space-between;
+   align-items: center;
+  
+}
+.navbar__logo{
+
+   max-width: 300px;
+}
+.navbar__menu{
+   display: flex;
+   align-items: center;
+   gap: 20px;
+}
+
+.navbar__link{
+   font-size:2em;
+   padding: 8px 16px;
+   display: inline-block;
+  transition: background .3s ease-in-out;
+  position: relative;
+
+
+}
+
+.navbar__link:hover {
+   background-color: var( --primary-solid)
+
+
+
+}
+
+
+/*FORMULARIO INGRESO*/
+
+h2{
+    font-size:42px;
+ }
+
+.form__container{
+    border:10px solid rgb(199, 24, 24);
+    flex-direction: column;
+    display: flex;
+    position:absolute;
+     bottom: 300px;
+     left: 50%;
+     transform: translate(-50%, -50%); /*con esta propiedad centre el login*/
+
+    
+
+}
+
+
+
+
+
+    .box{
+        display: flex;
+        margin: 15px 1px;
+        gap:10px
+        
+
+    }
+    .box label{ /*subir a git*/
+        flex-basis:230px;
+        width: 148px;
+        height: 29px;
+        top: 322.78px;
+        left: 528.56px;
+        color: #000000;
+        font-size: 2.4em;
+       
+
+font-weight: 400;
+line-height: 29px;
+letter-spacing: 0.04em;
+
+
+ 
+    }
+    .box input{
+        border:none;
+        background: none;
+        padding-top:20px;
+        border-bottom: 2px solid var( --primary-solid); /*ver q es*/
+
+    }
+.box input:after{  
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid burlywood;
+    transform: translate(-100%);
+    transition: all 0,3s ease;
+}
+
+.btn{
+    border: none;
+    padding: 6px;
+    margin-top: 5px;
+    border-radius: 5px;
+    cursor:pointer;
+    transition: all ease 3s;
+    color:antiquewhite;
+    display:inline-block;
+    padding: 7px
+}
+ .btn-box{
+    font-size: 1.2em;
+    width: 103px;
+    height: 39.06px;
+    top: 390.78px;
+   left: 583.26px;
+   margin-left: 30px;
+   background: #FF3333;
+   border:none;
+   color: #FFFFFF;
+
+
+
+ }
+
+/*CHECKBOX*//*subir a git*/
+ input[type=checkbox]{/*https://www.youtube.com/watch?v=KyQ4HKEoG9o&t=1s*/
+    margin-left:110px;
+ }
+
+input[type=checkbox] + label{
+  cursor: pointer;
+  
+ 
+}
+#checkbox{
+    border: 4%;
+}
+
+          /*subir a git*/
+           
+         .return {
+            align-items:left;
+             width: 140px;
+             height: 17px;
+             top: 452.13px;
+             margin-left: 140px;
+             padding: 40px ;
+             color: #1D84B5;
+             font-size: 1.4em;
+             font-weight: 400px;
+             line-height: 17px;
+            letter-spacing: 0em;
+            
+
+     
+             
+         }
+
+         /*FOOTER*/
+         .footer{  /*subior a git*/
+            padding: 68px;
+             width: 100%;
+             background: #30343F;
+            position:absolute;
+             bottom: 0;
+         }
+         
+
+.footer__copy{
+    margin-top: 36px;
+    color: aliceblue;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
+    font-weight: 500PX;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+
+ 
+ }
+ 
+ 
+ @media screen and (min-width: 768px) and (max-width:1144px) {
+header{
+    background-color: #30343F;
+}
+}
+@media screen and (min-width:768px){
+    body{
+        font-size:1.6em;
+    }
+}
